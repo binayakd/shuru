@@ -1,2 +1,2 @@
-# shuru
-Startpage in React
+# Shuru
+Start page in Vue.

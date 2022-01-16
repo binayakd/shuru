@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Media",
+    "apps": [
+      {
+        "name": "Plex",
+        "url": "http://plex.192.168.0.101.nip.io",
+        "icon": "plex"
+      },
+      {
+        "name": "Sonarr",
+        "url": "http://sonarr.192.168.0.101.nip.io",
+        "icon": "television-box"
+  
+      },
+      {
+        "name": "Jacket",
+        "url": "http://jackett.192.168.0.101.nip.io",
+        "icon": "tshirt-crew-outline"
+      },
+      {
+        "name": "Transmissions",
+        "url": "http://transmissions.192.168.0.101.nip.io",
+        "icon": "progress-download"
+      },
+      {
+        "name": "Synology",
+        "url": "http://192.168.0.222",
+        "icon": "nas"
+        
+      }
+    ]
+  },
+  {
+    "name": "Dev",
+    "apps": [
+      {
+        "name": "Gitea",
+        "url": "http://gitea.192.168.0.101.nip.io",
+        "icon": "git"
+      },
+      {
+        "name": "Harbor",
+        "url": "https://harbor.192.168.0.101.nip.io",
+        "icon": "ferry"
+      },
+      {
+        "name": "Longhorn",
+        "url": "http://longhorn.192.168.0.101.nip.io",
+        "icon": "cow"
+      },
+      {
+        "name": "ArgoCD",
+        "url": "http://argocd.192.168.0.101.nip.io/",
+        "icon": "ship-wheel"
+      },
+      {
+        "name": "Argo Workflow",
+        "url": "http://argo.192.168.0.101.nip.io",
+        "icon": "pipe"
+      }
+    ]
+  }
+]

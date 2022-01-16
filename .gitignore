@@ -104,3 +104,6 @@ dist
 .tern-port
 
 .parcel-cache
+dist-ssr
+*.local
+.DS_Store
