@@ -1,2 +1,2 @@
 # Shuru
-Start page in Vue.
+Start page in Vue.js.
