@@ -1,43 +1,44 @@
 <template>
-  <p class="font-light">{{ date }}</p>
-  <p class="text-5xl font-bold pt-5">{{ greeting }}</p>
+  <p class="text-9xl text-title text-center font-display pt-14">{{ dateTime.time }}</p>
+  <p class="text-2xl font-light text-center font-display">{{ dateTime.date }}</p>
 </template>
 
 
 <script>
-import { computed } from "vue";
-const currentDate = new Date();
+import { ref, onMounted } from "vue";
+
+export function getDateTime() {
+  const dateTime = ref({ date: "", time: "" })
+  const dateOptions = {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    weekday: "long",
+  };
+
+  const timeOptions = {
+    hour: '2-digit', minute: '2-digit', second: "2-digit"
+  }
+
+  onMounted(() => {
+    setInterval(() => {
+      const now = new Date()
+      var currentDateTime = {
+        date: now.toLocaleDateString("en-GB", dateOptions),
+        time: now.toLocaleTimeString("en-GB", timeOptions)
+      }
+      dateTime.value = currentDateTime
+    }, 1000)
+  })
+  return dateTime
+}
 
 export default {
   setup() {
-    const date = computed(() => { 
-      const dateOptions = {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric"
-      };
-      return currentDate.toLocaleDateString("en-GB", dateOptions).toUpperCase();
-    });
-
-    const greeting = computed(() => {
-      let greetNum = Math.floor(currentDate.getHours() / 6);
-
-      switch (greetNum) {
-        case 0:
-          return "Good night!";
-        case 1:
-          return "Good morning!";
-        case 2:
-          return "Good afternoon!";
-        case 3:
-          return "Good evening!";
-      }
-    });
+    const dateTime = getDateTime();
 
     return {
-      date,
-      greeting
+      dateTime
     }
   
   }

@@ -1,15 +1,17 @@
 <template>
-  <div class="grid grid-cols-3 lg:grid-cols-4 gap-0">
-    <div class="flex" v-for="app in appList" :key="app.name">
-      <div class="flex-none h-[64px] pr-2">
-        <span class="iconify icon text-4xl" :data-icon="`mdi-${app.icon}`"></span>
-      </div>
-      <div class="flex-none">
-        <a :href="app.url" target="_blank" rel="noreferrer noopener">
-          <p>{{ app.name.toUpperCase() }}</p>
-          <p class="text-secondary text-xs leading-none">{{ app.url.toUpperCase().replace("HTTP://", "").replace("HTTPS://", "") }}</p>
-        </a>
-      </div>
+  <div class="grid grid-cols-3 lg:grid-cols-4 gap-0s">
+    <div class="flex hover:text-title hover:font-black" v-for="app in appList" :key="app.name">
+      <a :href="app.url" target="_blank" rel="noreferrer noopener">
+        <div class="flex-none h-[64px] pr-2">
+          <span class="iconify icon text-5xl" :data-icon="`mdi-${app.icon}`"></span>
+        </div>
+      </a>
+      <a :href="app.url" target="_blank" rel="noreferrer noopener">
+        <div class="flex-none">
+          <p class="text-xl">{{ app.name.toUpperCase() }}</p>
+          <p class="text-secondary font-condensed leading-none">{{ app.url.toUpperCase().replace("HTTP://", "").replace("HTTPS://", "") }}</p>
+        </div>
+      </a>
     </div>
   </div>
 </template>

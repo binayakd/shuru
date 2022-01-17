@@ -20,7 +20,7 @@
       },
       {
         "name": "Transmissions",
-        "url": "http://transmissions.192.168.0.101.nip.io",
+        "url": "http://transmission.192.168.0.101.nip.io",
         "icon": "progress-download"
       },
       {
