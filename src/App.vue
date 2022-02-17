@@ -1,6 +1,6 @@
 <template>
-  <div class="h-screen flex bg-background text-primary"> 
-    <div class="container mx-auto pt-20 w-[90%] xl:w-[60%]">
+  <div class="h-screen flex justify-center items-center bg-background text-primary"> 
+    <div class="container mx-auto w-[90%] xl:w-[60%]">
       <DateDisplay />
       <Apps />
     </div>

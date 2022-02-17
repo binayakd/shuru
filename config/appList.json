@@ -32,7 +32,7 @@
     ]
   },
   {
-    "name": "Dev",
+    "name": "Homelab",
     "apps": [
       {
         "name": "Gitea",
@@ -45,11 +45,6 @@
         "icon": "ferry"
       },
       {
-        "name": "Longhorn",
-        "url": "http://longhorn.192.168.0.101.nip.io",
-        "icon": "cow"
-      },
-      {
         "name": "ArgoCD",
         "url": "http://argocd.192.168.0.101.nip.io/",
         "icon": "ship-wheel"
@@ -58,6 +53,21 @@
         "name": "Argo Workflow",
         "url": "http://argo.192.168.0.101.nip.io",
         "icon": "pipe"
+      },
+      {
+        "name": "Argo Minio",
+        "url": "http://argo-minio-ui.192.168.0.101.nip.io",
+        "icon": "database"
+      },
+      {
+        "name": "Longhorn",
+        "url": "http://longhorn.192.168.0.101.nip.io",
+        "icon": "cow"
+      },
+      {
+        "name": "traefik",
+        "url": "http://traefik.192.168.0.101.nip.io/dashboard/#/",
+        "icon": "location-enter"
       }
     ]
   }
