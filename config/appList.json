@@ -1,37 +1,5 @@
 [
   {
-    "name": "Media",
-    "apps": [
-      {
-        "name": "Plex",
-        "url": "http://plex.192.168.0.101.nip.io",
-        "icon": "plex"
-      },
-      {
-        "name": "Sonarr",
-        "url": "http://sonarr.192.168.0.101.nip.io",
-        "icon": "television-box"
-  
-      },
-      {
-        "name": "Jacket",
-        "url": "http://jackett.192.168.0.101.nip.io",
-        "icon": "tshirt-crew-outline"
-      },
-      {
-        "name": "Transmissions",
-        "url": "http://transmission.192.168.0.101.nip.io",
-        "icon": "progress-download"
-      },
-      {
-        "name": "Synology",
-        "url": "http://192.168.0.222",
-        "icon": "nas"
-        
-      }
-    ]
-  },
-  {
     "name": "Homelab",
     "apps": [
       {
@@ -68,6 +36,38 @@
         "name": "traefik",
         "url": "http://traefik.192.168.0.101.nip.io/dashboard/#/",
         "icon": "location-enter"
+      }
+    ]
+  },
+  {
+    "name": "Media",
+    "apps": [
+      {
+        "name": "Plex",
+        "url": "http://plex.192.168.0.101.nip.io",
+        "icon": "plex"
+      },
+      {
+        "name": "Sonarr",
+        "url": "http://sonarr.192.168.0.101.nip.io",
+        "icon": "television-box"
+  
+      },
+      {
+        "name": "Jacket",
+        "url": "http://jackett.192.168.0.101.nip.io",
+        "icon": "tshirt-crew-outline"
+      },
+      {
+        "name": "Transmissions",
+        "url": "http://transmission.192.168.0.101.nip.io",
+        "icon": "progress-download"
+      },
+      {
+        "name": "Synology",
+        "url": "http://192.168.0.222",
+        "icon": "nas"
+        
       }
     ]
   }

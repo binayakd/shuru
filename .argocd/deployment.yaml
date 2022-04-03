@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shuru
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: shuru
+        image: harbor.192.168.0.101.nip.io/library/shuru:latest
